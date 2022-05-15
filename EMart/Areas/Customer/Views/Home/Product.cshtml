@@ -1,0 +1,37 @@
+﻿
+@model IEnumerable<EMart.Models.Product>
+
+	<div class="row pb-3">
+	@foreach(var product in Model)
+	{
+		<div class="col-lg-3 col-md-6">
+			<div class="row p-2">
+				<div class="col-12 p-1" style="border-radius: 3px;">
+					<div class="card mt-4">
+						<img src="@product.ImageUrl" class="card-img-top rounded mx-auto" style="width:200px;height:200px; object-fit:contain"/>
+
+						<div class="card-body">
+						<div class="pl-1">
+							<p class="card-title h5 text-primary">@product.Name</p>
+							<p class="card-title text-info"><b>@product.Category.Name</b></p>
+						</div>
+						<div class="pl-1">
+							<p><strike><b>₹@product.ListPrice.ToString("0.00")</b></strike></p>
+						</div>
+						<div class="pl-1">
+							<p><b>₹@product.Price.ToString("0.00")</b></p>
+						</div>
+						</div>
+					<div>
+						<a asp-action="Details" class="btn btn-primary form-control" asp-route-productId="@product.Id">
+							Details
+						</a>
+					</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	}
+</div>
+
+

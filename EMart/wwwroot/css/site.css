@@ -1,0 +1,124 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*body {
+    margin-bottom: 60px;
+}*/
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    border: 2px solid black;
+}
+
+
+
+
+
+<!--
+footer-- >
+/* footer section */
+footer.w3l-footer-29-main {
+    background: #09131d;
+}
+
+.w3l-footer-29-main h6.footer-title-29 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.w3l-footer-29-main .footer-list-29 ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+    .w3l-footer-29-main .footer-list-29 ul li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .w3l-footer-29-main .footer-list-29 ul li a,
+    .w3l-footer-29-main .footer-list-29 p a,
+    .w3l-footer-29-main .footer-list-29 p {
+        font-size: 15px;
+        color: #ababab;
+        border-bottom: 1px solid rgb(255 255 255 / 22%);
+        padding-bottom: 4px;
+    }
+
+    .w3l-footer-29-main .footer-list-29 ul li a {
+        display: block;
+    }
+
+        .w3l-footer-29-main .footer-list-29 ul li a:hover,
+        .w3l-footer-29-main .footer-list-29 p a:hover {
+            color: #fff;
+        }
+
+    .w3l-footer-29-main .footer-list-29 ul li:last-child a,
+    .w3l-footer-29-main .footer-list-29 p {
+        border-bottom: none;
+    }
+
+p.copy-footer-29 {
+    font-size: 15px;
+    color: #fff;
+}
+
+    p.copy-footer-29 a {
+        color: var(--primary-color);
+    }
+
+        p.copy-footer-29 a:hover {
+            color: var(--secondary-color);
+        }
+
+@media (max-width: 991px) {
+    .w3l-footer-29-main h6.footer-title-29 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .w3l-footer-29-main .footer-list-29 ul li,
+    .w3l-footer-29-main .midd-footer-29:nth-child(1) .footer-list-29 ul li:last-child {
+        margin-bottom: 8px;
+    }
+
+    .col-4.footer-list-29 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .w3l-footer-29-main h6.footer-title-29 {
+        margin-bottom: 10px;
+    }
+}
+
+/* //footer section */
+.footer {
+    position: fixed;
+    padding:10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    
+    height: 60px; /* Vertically center the text there */
+}
